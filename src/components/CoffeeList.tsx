@@ -30,7 +30,7 @@ const CoffeeList = () => {
                 <button onClick={() => setContent('all')} className={`${content === 'all' && 'bg-dark-300 p-2 rounded-lg'}`}>All products</button>
                 <button onClick={() => setContent('available')} className={`${content === 'available' && 'bg-dark-300 p-2 rounded-lg'}`}>Available now</button>
             </div>
-            <ul className="grid grid-cols-2 max-md:grid-cols-1 gap-10 mt-8">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-8">
                 { content === 'all' ?
                     coffeeList.map((item: Coffee) => <CoffeeItem key={item.id} item={item} />)
                     : coffeeList.map((item: Coffee) => item.available && <CoffeeItem key={item.id} item={item} />)
