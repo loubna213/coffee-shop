@@ -27,8 +27,8 @@ const CoffeeList = () => {
             <h1 className="capitalize font-semibold text-white text-4xl mb-4 z-10">Our Collection</h1>
             <p className="text-dark-300 max-w-[520px] text-center z-10">Introducing our Coffee Collection, a selection of unique coffees from different roast types and origins, expertly roasted in small batches and shipped fresh weekly.</p>
             <div className="flex gap-8 text-white pt-6">
-                <button onClick={() => setContent('all')} className={`${content === 'all' && 'bg-dark-300 p-2 rounded-lg'}`}>All products</button>
-                <button onClick={() => setContent('available')} className={`${content === 'available' && 'bg-dark-300 p-2 rounded-lg'}`}>Available now</button>
+                <button onClick={() => setContent('all')} className={`${content === 'all' && 'bg-dark-300 p-2 rounded-lg'} text-[14px]`}>All products</button>
+                <button onClick={() => setContent('available')} className={`${content === 'available' && 'bg-dark-300 p-2 rounded-lg'} text-[14px`}>Available now</button>
             </div>
             <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-8">
                 { content === 'all' ?
