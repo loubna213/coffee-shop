@@ -14,7 +14,6 @@ interface CoffeeProps {
     item: Coffee,
 }
 
-
 const CoffeeItem = ({ item }: CoffeeProps) => {
     const { name, image, popular, available, price, rating, votes} = item
 
