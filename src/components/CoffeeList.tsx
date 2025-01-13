@@ -4,7 +4,7 @@ import CoffeeItem, { Coffee } from "./CoffeeItem"
 const CoffeeList = () => {
     const [coffeeList, setCoffeeList] = useState([])
     const [content, setContent] = useState('all')
-
+    
     useEffect(() => {
         async function fetchCoffee() {
             try {
