@@ -7,6 +7,7 @@
 body {
   font-family: "DM Sans", sans-serif;
 }
+
 @layer utilities {
   .max-container {
     @apply mx-auto max-w-[1440px]
