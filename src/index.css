@@ -12,6 +12,7 @@ body {
   .max-container {
     @apply mx-auto max-w-[1440px]
   }
+  
   .padding-container {
     @apply px-6 max-md:px-16 xl:px-0
   }
